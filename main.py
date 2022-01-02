@@ -45,8 +45,9 @@ while not game_over:
 
     if "_" not in display:
         game_over = True
-        game_restart()
         print("Ai castigat!")
+        print(f"Corect, cuvantul era: {chosen_word}")
+        game_restart()
 
     print(stages[lives])
     word = ' '.join(display)
