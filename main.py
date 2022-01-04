@@ -48,7 +48,8 @@ def play_game():
             game_over = True
             print("Ai castigat!")
             print(f"Corect, cuvantul era: {chosen_word}")
-            game_restart()
+            while input("Joc nou? ( y / n): ") == 'y':
+                game_restart()
 
         print(stages[lives])
         word = ' '.join(display)
